@@ -10,5 +10,6 @@ public class MatchAnything {
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(s);
         matcher.results().forEach(System.out::println);
+        System.out.println(0);
     }
 }

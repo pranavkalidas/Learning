@@ -35,7 +35,6 @@ public class DFS {
     }
 
     private static void dfsTraversal(int[][] graph, int i, int j, int[][] visited){
-        Stack<Integer> stack = new Stack<>();
         visited[i][j]=1;
         if(i+1<graph.length && graph[i+1][j]==1 && visited[i+1][j]!=1){
             dfsTraversal(graph,i+1,j,visited);
